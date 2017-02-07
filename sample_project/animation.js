@@ -8,7 +8,7 @@
 
 "use strict";     // Selects strict javascript
 var canvas, canvas_size, shaders, gl = null, g_addrs,          // Global variables
-	thrust = vec3(), origin = vec3(0, 10, -15), looking = false, prev_time = 0, animate = false, animation_time = 0, gouraud = false, color_normals = false, camera_mode = 1, max_camera_modes = 3;
+	thrust = vec3(), origin = vec3(0, 10, -15), looking = false, prev_time = 0, animate = true, animation_time = 0, gouraud = false, color_normals = false, camera_mode = 1, max_camera_modes = 3;
 var fps = 0, current_num_frames = 0, fps_time_count = 0;
 var show_pick_shader = false;
 
