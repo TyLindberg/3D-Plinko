@@ -160,6 +160,8 @@ void main() {
 }
 </script>
 
+<link rel="stylesheet" href="styles.css">
+
 <!-- 
 // *******************************************************
 Javascript "include" files.  Any code in them gets executed as part of the page loading.
@@ -173,8 +175,13 @@ Javascript "include" files.  Any code in them gets executed as part of the page 
 <script type="text/javascript" src="Common/shortcut.js"></script>
 <script type="text/javascript" src="sample_project/Custom_Shapes.js"></script>
 <script type="text/javascript" src="sample_project/animation.js"></script>
-</head><body>
-<canvas id="gl-canvas" width="800" height="600"></canvas><p>
+</head>
+
+<body>
+	<div id="canvas-container">
+		<canvas id="gl-canvas" width="800" height="600"></canvas>
+	</div>
+<!-- <p>
 <a href="#" onclick='document.getElementById( "instructions" ).style = "display:block"; this.style = "display:none";'> Click for instructions </a><div id="instructions" style = "display:none">
 Controlling this Graphics Object: 
 <ul><li>Animation is paused when this program starts, so first you should press ALT+a to play or pause animation. <li>
@@ -187,8 +194,9 @@ Controlling this Graphics Object:
 		center of the window to steer, and press f again to stop this and to freeze the steering again.  Any roll rotation is controlled separately with the comma and period keys. <li> 
     The keys ALT+n and ALT+g switch shading behaviors.  ALT+n directly shows you normal vectors on shapes by interpreting X,Y,Z vectors
     as R,G,B colors.  ALT+g toggles Gouraud shading vs Smooth Phong shading with textures.<li>
-		Press 1 and 2 to cycle through a live feed of important strings and values of the program -- the code for each Displayable object includes a function where it can provide these. <li>
+		Press 1 and 2 to cycle through a live feed of important strings and values of the program - the code for each Displayable object includes a function where it can provide these. <li>
 		The keys p and m cycle through a list of the coordinate axes (bases) you have listed down as worth drawing (at various points within your drawing routine). <li>
 		Have fun.
-</div></p></body>
+</div></p> -->
+</body>
 </html>
